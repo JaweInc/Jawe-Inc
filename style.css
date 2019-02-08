@@ -1,0 +1,302 @@
+body{
+	margin: 0px auto;
+}
+* {
+	box-sizing: border-box;
+}
+.row:after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+[class*="col-"] {
+    float: left;
+    
+}
+
+.col-1{
+	width: 8.33%;
+}
+.col-2{
+	width: 16.66%;
+}
+.col-3{
+	width: 25%;
+}
+.col-4{
+	width: 33.33%;
+}
+.col-5{
+	width: 41.66%;
+}
+.col-6{
+	width: 50%;
+}
+.col-7{
+	width: 58.33%;
+}
+.col-8{
+	width: 66.66%;
+}
+.col-9{
+	width: 75%;
+}
+.col-10{
+	width: 83.33%;
+}
+.col-11{
+	width: 91.66%;
+}
+.col-12{
+	width: 100%;
+}
+
+@media only screen and (max-width: 768px) {
+   
+    [class*="col-"] {
+        width: 100%;
+    }
+}
+
+
+
+/*.......................... .......navigation bar............................................*/
+
+.nav{
+
+	background: linear-gradient(to right, black, darkred, black);
+	color: white;
+	padding: 8px 0px 5px 0px;
+}
+
+
+
+/*.......................... .......search-bar............................................*/
+
+
+
+
+
+input[type="search"]{
+
+	border: none;
+	padding: 8px;
+	width: 78.85%;
+	outline: none;
+	transition: 0.6s;
+}
+
+.search-btn::before{
+
+	content: url('img/search7.png');
+
+	
+}
+.search{
+
+	padding: 12px;
+	transition: 0.6s;
+
+}
+
+.search-bar{
+
+	padding: 10px;
+	border: 1px solid white;
+	border-radius: 50px 20px;
+	outline: none;
+	background-color: white;
+
+} 
+.search-btn{
+
+	outline: none;
+	background-color: white;
+	border: none;
+	border-left: 1px solid darkred;
+	vertical-align: -5px;
+}
+.search-btn:hover{
+
+	cursor: pointer;
+}
+
+/*................................. JAWE INC.............................................*/
+
+.forJ{
+
+	font-size: 30px;
+
+}
+.brandName{
+
+	font-family: segoe script;
+
+}
+.brandName::before{
+
+	content: url('img/FB_IMG_1502980870801.jpg');
+	vertical-align: -7px;
+
+	
+}
+
+/*.................................ul list.............................................*/
+
+ul.list li{
+
+	list-style-type: none;
+	display: inline;
+	margin: 13px;
+}
+ul.list li a{
+
+	text-decoration: none;
+	color: white;
+	text-transform: capitalize;
+	font-family: serif;
+
+}
+/*.About::before{
+
+	content: url('img/about.png');
+	vertical-align: -7px;
+}
+.Help::before{
+
+	content: url('img/IMG_3171.png');
+	vertical-align: -7px;
+}
+.Settings::before{
+
+	content: url('img/settings.jpg');
+	vertical-align: -7px;
+}
+*/
+
+/* ............................... media quaries ...........................*/
+
+@media only screen and (max-width: 766px){
+
+	.nav{
+
+		display: block-inline;
+
+	}
+
+	.search{
+
+		width: 100%;
+	}
+
+	input[type="search"]{
+
+		//width: 100px;
+	}
+	input[type="search"]:focus{
+
+		//width: 50%;
+		//transition: 0.6s;
+	}
+	.search:focus{
+
+		width: 50%;
+		transition: 0.6s;
+			
+	}
+	
+	ul.list li{
+
+		display: block;
+		text-align: left;
+
+	}
+
+}
+/* ...................................... chatbox................................................*/
+
+
+.chatbox{
+
+	margin-top: 80px;
+}
+
+
+.sidebar-1{
+
+	background: linear-gradient(to bottom, darkred, black, black, darkred) ;
+	height: 250px;
+}
+
+.center-mid{
+
+	//background: linear-gradient(to bottom, darkred, black, black, darkred) ;
+	height: 600px;
+}
+
+.sidebar-2{
+
+	background: linear-gradient(to bottom, darkred, black, black, darkred) ;
+	height: 250px;
+}
+.para-1{
+
+	color: white;
+	background: linear-gradient(to right, black, darkred);
+	border-radius: 60px;
+}
+.sidebar-3{
+
+	background: linear-gradient(to bottom, darkred, black, black, darkred) ;
+	height: 6000px;
+}
+.sidebar-4{
+
+	background: linear-gradient(to bottom, darkred, black, black, darkred) ;
+	height: 6000px;
+}
+
+
+
+@media only screen and (max-width: 766px){
+
+	.sidebar-1{
+		display: none;
+
+	}
+	.sidebar-2{
+		display: none;
+	}
+	.sidebar-3{
+		display: none;
+	}
+	.sidebar-4{
+		display: none;
+	}
+
+	ul{
+
+		display: none;
+	}
+
+	.nav{
+
+		display: ;
+	}
+
+.chatbox-2{
+
+	margin-top: 30px;
+}
+
+.chatbox{
+
+	margin-top: -50px;
+}
+
+.para-1{
+
+	border-radius: 0px;
+}
+}
